@@ -1,0 +1,272 @@
+* {
+    background-color: #f0f1f2bd;
+}
+
+.head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.head small {
+    font-size: small;
+    font-weight: 600;
+}
+
+.head h1 {
+    font-size: 48px;
+    color: #2b303b;
+    font-weight: 700;
+}
+
+.head p {
+    color: #737b8c;
+}
+
+/* Input Component */
+.input-container {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dbe3ea;
+    margin: 10px 280px;
+    padding: 20px 30px;
+    box-shadow: 2px 5px 7px #dadfe3;
+}
+
+.input-container input {
+    height: 50px;
+    width: 80%;
+    margin-left: 30px;
+    border: 1px solid #dbe3ea;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.input-container input:focus {
+    outline: none;
+    border: 1.5px solid #2eb8ac;
+}
+
+.input-container button {
+    margin-left: 10px;
+    padding: 7px 14px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2eb8ac;
+    border: none;
+}
+
+/* Buttons Component */
+.button-container {
+    display: flex;
+    gap: 30px;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    border-radius: 10px;
+    color: #2b303b;
+    padding: 6px 10px;
+    border: 1px solid #dbe3ea;
+    background-color: #ebf0f4;
+    transition: .3s;
+}
+.btn:hover {
+    color: #289990;
+    transition: .3s;
+}
+.btn:active {
+    background-color: #2eb8ac;
+    border: 1px solid #2eb8ac;
+    color: white;
+}
+.btn:focus {
+    background-color: #2eb8ac;
+    border: 1px solid #2eb8ac;
+    color: white;
+}
+
+/* List number tracker */
+.len {
+    text-align: center;
+    color: #737b8c;
+}
+
+/* Task list */
+.task-container {
+    background-color: white;
+    border-radius: 10px;
+    color: #2b303b;
+    border: 1px solid #dbe3ea;
+    margin: 10px 280px;
+    padding: 25px 30px;
+    transition: .5s;
+}
+
+.task-container:hover {
+    box-shadow: -1px 5px 5px #dadfe3;
+    transition: .5s;
+}
+
+.task-container:hover .trash {
+    display: block;
+}
+
+.lists {
+    color: #2b303b;
+}
+
+/* The trash button */
+.trash {
+    display: none;
+    float: right;
+    scale: 1.17;
+    justify-content: center;
+    color: #2b303b;
+    align-items: center;
+    /* transform: translateY(5px); */
+    padding: 8px 8px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .4s;
+}
+.trash svg {
+    background: none;
+}
+
+.trash:hover {
+    background-color: rgba(255, 74, 74, 0.108);
+    color: red;
+    transition: .4s;
+}
+
+.tick {
+    padding: 5px 5px;
+    border-radius: 10px;
+    scale: 1.2;
+    border: 1.3px solid #dbe3ea;
+    background-color: #f0f1f2bd;
+    margin-right: 10px;
+}
+
+.task-container.completed {
+    opacity: 0.6;
+}
+
+.task-container.completed span {
+    text-decoration: line-through;
+    color: #a0a8b8;
+}
+
+/* .tick:focus {
+    background-color: #2eb8ac;
+    color: white;
+    border: 1.3px solid #2eb8ac;
+} */
+ .list-div {
+    background: transparent;
+ }
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .input-container {
+        margin: 10px 150px;
+    }
+
+    .task-container {
+        margin: 10px 150px;
+    }
+
+    .button-container {
+        margin-left: 30%;
+    }
+
+    .head h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        margin: 10px 20px;
+    }
+
+    .task-container {
+        margin: 10px 20px;
+    }
+
+    .button-container {
+        margin-left: 20%;
+        gap: 15px;
+    }
+
+    .input-container input {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .head h1 {
+        font-size: 28px;
+    }
+
+    .head p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-container {
+        margin: 10px;
+        padding: 15px 20px;
+        /* width: 100%; */
+    }
+
+    .task-container {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+
+    .button-container {
+        margin-left: 10%;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .input-container input {
+        width: 80%;
+        height: 40px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .input-container button {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+    .head h1 {
+        font-size: 24px;
+    }
+
+    .head p {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .tick {
+        scale: 1;
+    }
+
+    .len {
+        font-size: 12px;
+    }
+}
