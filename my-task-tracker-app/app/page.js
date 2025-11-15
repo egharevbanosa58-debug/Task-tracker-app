@@ -10,7 +10,7 @@ import Input from './components/Input'
 
 const page = () => {
   return (
-    <div>
+    <div className='body'>
       <Header/>
       <Input/>
     </div>
