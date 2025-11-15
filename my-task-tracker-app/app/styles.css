@@ -4,6 +4,8 @@
 
 .body {
     background-color: #f0f1f2bd;
+    margin-bottom: 1000px;
+    overflow: hidden;
 }
 .head {
     text-align: center;
