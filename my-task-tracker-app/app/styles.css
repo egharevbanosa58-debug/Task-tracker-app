@@ -1,13 +1,15 @@
 * {
     background-color: #f0f1f2bd;
+    font-family: sans-serif;
 }
 
 .body {
     background-color: #f0f1f2bd;
-    font-family: sans-serif;
+
     margin-bottom: 1000px;
     overflow: hidden;
 }
+
 .head {
     text-align: center;
     margin-top: 20px;
@@ -46,6 +48,7 @@
     padding: 5px 20px;
     border-radius: 10px;
 }
+
 .input-container input:focus {
     outline: none;
     border: 1.5px solid #2eb8ac;
@@ -77,15 +80,18 @@
     background-color: #ebf0f4;
     transition: .3s;
 }
+
 .btn:hover {
     color: #289990;
     transition: .3s;
 }
+
 .btn:active {
     background-color: #2eb8ac;
     border: 1px solid #2eb8ac;
     color: white;
 }
+
 .btn:focus {
     background-color: #2eb8ac;
     border: 1px solid #2eb8ac;
@@ -136,6 +142,7 @@
     border-radius: 10px;
     transition: .4s;
 }
+
 .trash svg {
     background: none;
 }
@@ -169,9 +176,9 @@
     color: white;
     border: 1.3px solid #2eb8ac;
 } */
- .list-div {
+.list-div {
     background: transparent;
- }
+}
 
 /* Responsiveness */
 @media (max-width: 1024px) {
