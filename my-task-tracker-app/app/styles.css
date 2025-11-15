@@ -3,6 +3,10 @@
     font-family: sans-serif;
 }
 
+.body {
+    padding: 147px 1px;
+}
+
 .nosa {
     background-color: #f0f1f2bd;
     overflow: hidden;
@@ -244,11 +248,11 @@
     }
 
     .nosa {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .head {
-        margin-top: 150px;
+        margin-top: 50px;
         /* font-size: 60px; */
     }
 
