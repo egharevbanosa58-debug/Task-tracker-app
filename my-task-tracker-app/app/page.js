@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import './Styling/styles.css'
+import './styles.css'
 
 //Component imports
 import Header from './components/Header'
