@@ -37,7 +37,7 @@ const Input = () => {
 
     //The return Statement
     return (
-        <div>
+        <div className="nosa">
             <div className="input-container">
                 <input type="text" value={task} placeholder="Add a new task..." onChange={(e) => setTask(e.target.value)} />
                 <button onClick={addTask} >+</button>
